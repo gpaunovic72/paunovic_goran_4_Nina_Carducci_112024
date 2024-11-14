@@ -224,9 +224,9 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
 
+      $(".active-tag").removeClass("active active-tag");
+      $(this).addClass("active active-tag"); // Ajout de la classe active au bouton cliqué
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function () {
