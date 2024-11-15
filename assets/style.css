@@ -86,6 +86,10 @@ body {
   line-height: 1.2;
   width: 60%;
 }
+.about-me__introduction span {
+  font-family: "Spectral";
+  font-style: italic;
+}
 
 #about-me p {
   width: 80%;
@@ -214,6 +218,22 @@ body {
   right: 0;
   z-index: -1;
 }
+
+.postalAddress span {
+  margin-top: 20px;
+  font-family: "Spectral";
+  font-size: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.picture.right span {
+  font-family: "Spectral";
+  font-size: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
 .form-container {
   flex: 2;
 }
