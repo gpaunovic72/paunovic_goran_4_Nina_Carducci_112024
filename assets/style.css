@@ -234,6 +234,13 @@ body {
   font-style: italic;
 }
 
+.picture.right p {
+  font-family: "Spectral";
+  font-size: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
 .form-container {
   flex: 2;
 }

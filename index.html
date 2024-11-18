@@ -2,10 +2,38 @@
 <html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Nina Carducci, photographe professionnelle, propose des services de qualité et sur mesure pour imortaliser vos plus beaux moments. Découvrez un savoir faire unique à travers son Portfolio"
+      content="Nina Carducci, photographe professionnelle à Bordeaux, propose des services de qualité et sur mesure pour imortaliser vos plus beaux moments. Découvrez un savoir faire unique à travers son Portfolio"
+    />
+    <meta
+      property="og:title"
+      content="Photographe de qualité - Nina Carducci"
+    />
+    <meta
+      property="og:description"
+      content="Nina Carducci, photographe professionnelle à Bordeaux, propose des services de qualité et sur mesure pour imortaliser vos plus beaux moments. Découvrez un savoir faire unique à travers son Portfolio"
+    />
+    <meta
+      property="og:image"
+      content="http://localhost:5500/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+    />
+    <meta property="og:url" content="http://localhost:5500/#about" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Photographe de qualité - Nina Carducci"
+    />
+    <meta
+      name="twitter:description"
+      content="Nina Carducci, photographe professionnelle à Bordeaux, propose des services de qualité et sur mesure pour immortaliser vos plus beaux moments. Découvrez un savoir-faire unique à travers son Portfolio."
+    />
+    <meta
+      name="twitter:image"
+      content="http://localhost:5500/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
     />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
@@ -15,7 +43,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
     <title>Photographe de qualité - Nina Carducci</title>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
     <script
@@ -119,9 +146,9 @@
         </div>
       </div>
       <article id="about">
-        <section class="picture left">
+        <div class="picture left">
           <img src="./assets/images/nina-comp.png" alt="Photographie Nina" />
-        </section>
+        </div>
         <section id="about-me">
           <h2 class="about-me__title">A propos de moi</h2>
           <p class="about-me__introduction">
@@ -203,7 +230,7 @@
             />
           </div>
         </section>
-        <section class="quote">
+        <div class="quote">
           <figure>
             <blockquote>
               <p class="quote__text">
@@ -216,7 +243,7 @@
             </blockquote>
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
-        </section>
+        </div>
       </article>
       <article id="services">
         <h3 class="title">Mes services</h3>
@@ -264,7 +291,7 @@
           </div>
         </section>
       </article>
-      <article class="quote">
+      <div class="quote">
         <figure>
           <blockquote>
             <p class="quote__text">
@@ -275,7 +302,7 @@
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
-      </article>
+      </div>
     </main>
     <footer>
       <div id="contact">
@@ -286,7 +313,7 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="" method="post">
+            <form action="#" method="post">
               <label>Nom</label>
               <input type="text" name="nom" id="nom" />
               <label>Email</label>
@@ -301,25 +328,35 @@
               <input type="submit" value="Envoyer" />
             </form>
           </div>
-          <div class="picture right">
+          <div
+            class="picture right"
+            itemscope
+            itemtype="https://schema.org/LocalBusiness"
+          >
             <img
+              itemprop="image"
               src="./assets/images/camera-comp.png"
               alt="Image appareil-photo"
             />
+            <span itemprop="name">Nina Carducci</span><br />
             <div
               class="postalAddress"
               itemprop="address"
               itemscope
               itemtype="https://schema.org/PostalAddress"
             >
-              <span itemprop="streetAddress">68 avenue Alsace-Lorraine, </span>
+              <span itemprop="streetAddress">68 avenue Alsace-Lorraine,</span>
               <span itemprop="postalCode">33200 </span>
               <span itemprop="addressLocality">Bordeaux</span><br />
-              <span itemprop="telephone">05 56 67 78 89</span><br />
             </div>
-            <span itemprop="openingHours" datetime=" Mo-Fr, 10:00-19:00"
-              >Je réponds au téléphone du lundi au vendredi de 10 h à 19 h</span
-            >
+            <p>
+              <a href="+33556677889" itemprop="telephone">+33 5 56 67 78 89</a
+              ><br />
+              <span itemprop="openingHours" datetime="Mo-Fr, 10:00-19:00"
+                >Je réponds au téléphone du lundi au vendredi de 10 h à 19
+                h</span
+              >
+            </p>
           </div>
         </div>
       </div>
