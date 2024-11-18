@@ -97,7 +97,7 @@ body {
 }
 
 #gallery {
-  /*	min-height: 100vh; */
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -109,7 +109,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #6c6300;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -220,7 +220,6 @@ body {
 }
 
 .postalAddress span {
-  margin-top: 20px;
   font-family: "Spectral";
   font-size: 1rem;
   font-weight: 800;
@@ -234,11 +233,9 @@ body {
   font-style: italic;
 }
 
-.picture.right p {
-  font-family: "Spectral";
-  font-size: 1rem;
-  font-weight: 800;
-  font-style: italic;
+.picture.right a.tel {
+  color: #000;
+  cursor: pointer;
 }
 
 .form-container {

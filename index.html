@@ -47,7 +47,6 @@
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
-      async
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
@@ -315,11 +314,11 @@
               heures
             </p>
             <form action="#" method="post">
-              <label>Nom</label>
+              <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" />
-              <label>Email</label>
+              <label for="email">Email</label>
               <input type="email" name="email" id="email" />
-              <label>Message</label>
+              <label for="message">Message</label>
               <textarea
                 name="message"
                 id="message"
@@ -351,7 +350,8 @@
               <span itemprop="addressLocality">Bordeaux</span><br />
             </div>
             <p>
-              <a href="+33556677889" itemprop="telephone">+33 5 56 67 78 89</a
+              <a href="+33556677889" class="tel" itemprop="telephone"
+                >+33 5 56 67 78 89</a
               ><br />
               <span itemprop="openingHours" datetime="Mo-Fr, 10:00-19:00"
                 >Je réponds au téléphone du lundi au vendredi de 10 h à 19
