@@ -52,6 +52,29 @@
     ></script>
     <script src="./assets/maugallery.min.js" async></script>
     <script src="./assets/scripts.min.js" async></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": [
+          "http://localhost:5500/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc.jpg",
+          "http://localhost:5500/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk.jpg",
+          "http://localhost:5500/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I.jpg",
+          "http://localhost:5500/assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ.jpg"
+        ],
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200"
+        },
+        "url": "http://localhost:5500/#contact",
+        "telephone": "+33556677889",
+        "description": "Je réponds au téléphone du lundi au vendredi de 10 h à 19h",
+        "openingHours": "Lun-Ven 10:00-19:00"
+      }
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -328,36 +351,12 @@
               <input type="submit" value="Envoyer" />
             </form>
           </div>
-          <div
-            class="picture right"
-            itemscope
-            itemtype="https://schema.org/LocalBusiness"
-          >
+          <div class="picture right">
             <img
               itemprop="image"
               src="./assets/images/camera-comp_1.webp"
               alt="Image appareil-photo"
             />
-            <span itemprop="name">Nina Carducci</span><br />
-            <div
-              class="postalAddress"
-              itemprop="address"
-              itemscope
-              itemtype="https://schema.org/PostalAddress"
-            >
-              <span itemprop="streetAddress">68 avenue Alsace-Lorraine,</span>
-              <span itemprop="postalCode">33200 </span>
-              <span itemprop="addressLocality">Bordeaux</span><br />
-            </div>
-            <p>
-              <a href="+33556677889" class="tel" itemprop="telephone"
-                >+33 5 56 67 78 89</a
-              ><br />
-              <span itemprop="openingHours" datetime="Mo-Fr, 10:00-19:00"
-                >Je réponds au téléphone du lundi au vendredi de 10 h à 19
-                h</span
-              >
-            </p>
           </div>
         </div>
       </div>
